@@ -1,0 +1,16 @@
+export declare const rootStore: import("@reduxjs/toolkit").EnhancedStore<{
+    googleBooksApi: import("@reduxjs/toolkit/dist/query/core/apiState").CombinedState<{
+        getBooks: import("@reduxjs/toolkit/query").QueryDefinition<import("../declarations/booksApi").VolumeQueryParams, import("@reduxjs/toolkit/query").BaseQueryFn<string | import("@reduxjs/toolkit/query").FetchArgs, unknown, import("@reduxjs/toolkit/query").FetchBaseQueryError, {}, import("@reduxjs/toolkit/query").FetchBaseQueryMeta>, never, import("../declarations/booksApi").VolumesQueryResponse, "googleBooksApi">;
+        getBook: import("@reduxjs/toolkit/query").QueryDefinition<import("../declarations/booksApi").VolumeQueryParams, import("@reduxjs/toolkit/query").BaseQueryFn<string | import("@reduxjs/toolkit/query").FetchArgs, unknown, import("@reduxjs/toolkit/query").FetchBaseQueryError, {}, import("@reduxjs/toolkit/query").FetchBaseQueryMeta>, never, import("../declarations/booksApi").ItemBook, "googleBooksApi">;
+    }, never, "googleBooksApi">;
+}, import("redux").AnyAction, import("@reduxjs/toolkit").MiddlewareArray<[import("redux-thunk").ThunkMiddleware<{
+    googleBooksApi: import("@reduxjs/toolkit/dist/query/core/apiState").CombinedState<{
+        getBooks: import("@reduxjs/toolkit/query").QueryDefinition<import("../declarations/booksApi").VolumeQueryParams, import("@reduxjs/toolkit/query").BaseQueryFn<string | import("@reduxjs/toolkit/query").FetchArgs, unknown, import("@reduxjs/toolkit/query").FetchBaseQueryError, {}, import("@reduxjs/toolkit/query").FetchBaseQueryMeta>, never, import("../declarations/booksApi").VolumesQueryResponse, "googleBooksApi">;
+        getBook: import("@reduxjs/toolkit/query").QueryDefinition<import("../declarations/booksApi").VolumeQueryParams, import("@reduxjs/toolkit/query").BaseQueryFn<string | import("@reduxjs/toolkit/query").FetchArgs, unknown, import("@reduxjs/toolkit/query").FetchBaseQueryError, {}, import("@reduxjs/toolkit/query").FetchBaseQueryMeta>, never, import("../declarations/booksApi").ItemBook, "googleBooksApi">;
+    }, never, "googleBooksApi">;
+}, import("redux").AnyAction, undefined>, import("redux").Middleware<{}, import("@reduxjs/toolkit/dist/query/core/apiState").RootState<{
+    getBooks: import("@reduxjs/toolkit/query").QueryDefinition<import("../declarations/booksApi").VolumeQueryParams, import("@reduxjs/toolkit/query").BaseQueryFn<string | import("@reduxjs/toolkit/query").FetchArgs, unknown, import("@reduxjs/toolkit/query").FetchBaseQueryError, {}, import("@reduxjs/toolkit/query").FetchBaseQueryMeta>, never, import("../declarations/booksApi").VolumesQueryResponse, "googleBooksApi">;
+    getBook: import("@reduxjs/toolkit/query").QueryDefinition<import("../declarations/booksApi").VolumeQueryParams, import("@reduxjs/toolkit/query").BaseQueryFn<string | import("@reduxjs/toolkit/query").FetchArgs, unknown, import("@reduxjs/toolkit/query").FetchBaseQueryError, {}, import("@reduxjs/toolkit/query").FetchBaseQueryMeta>, never, import("../declarations/booksApi").ItemBook, "googleBooksApi">;
+}, string, "googleBooksApi">, import("@reduxjs/toolkit").ThunkDispatch<any, any, import("redux").AnyAction>>]>>;
+export declare type RootState = ReturnType<typeof rootStore.getState>;
+export declare type AppDispatch = typeof rootStore.dispatch;
